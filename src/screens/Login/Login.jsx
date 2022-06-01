@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {View, Text, TextInput, SafeAreaView, Pressable} from 'react-native';
 import {useAuthorization} from '../../context/AuthorizationContext';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import styles from './Login.styles';
 
@@ -18,6 +19,8 @@ const Login = () => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.headerContainer}>
+        <Ionicons name="md-checkmark-circle" size={40} color="#fc037b" />
+
         <Text style={styles.header}>Welcome to MyMovies</Text>
         <Text style={styles.subtitle}>
           Find the best selection of movies here
